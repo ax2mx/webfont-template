@@ -1,0 +1,17 @@
+{
+  "name": "icons",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "init": "rm -rf dist && mkdir $_",
+    "dev": "npm run init && export NODE_ENV=development && fantasticon svg && open dist/*.html",
+    "build": "npm run init && export NODE_ENV=production && fantasticon svg"
+  },
+  "author": "Andrei Marukhin",
+  "license": "MIT",
+  "description": "Web font generator template",
+  "dependencies": {
+    "fantasticon": "^3.0.0",
+    "open": "^10.1.0"
+  }
+}
